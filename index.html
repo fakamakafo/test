@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app="testApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Test app</title>
+    <link rel="stylesheet" href="app.style.css"/>
+    <link rel="icon" href="http://transparent-favicon.info/favicon.ico" type="image/x-icon"/>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="core/core.module.js"></script>
+
+    <script src="core/menu/menu.service.js"></script>
+    <script src="core/menu/menu-list.component.js"></script>
+    <script src="core/menu/menu-settings.component.js"></script>
+
+  </head>
+  <body ng-view>
+
+    <menu-list></menu-list>
+
+  </body>
+</html>

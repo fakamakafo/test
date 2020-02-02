@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "Gruntfile.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vlad Udod",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-connect": "^2.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "less-plugin-autoprefix": "^2.0.0",
+    "less-plugin-clean-css": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakamakafo/test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/fakamakafo/test/issues"
+  },
+  "homepage": "https://github.com/fakamakafo/test#readme",
+  "description": ""
+}

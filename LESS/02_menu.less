@@ -1,0 +1,78 @@
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: @color-Primary-Dark;
+  padding: 0;
+  animation: 1s fade-in;
+  &.-horizontal {
+    flex-direction: row;
+    .menu__item {
+      margin: 0 10px 10px 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  &.-submenu {
+    display: block;
+    margin-left: 20px;
+    animation: .2s fade-in;
+  }
+  &.ng-hide{
+    animation: .1s fade-out;
+  }
+}
+
+.menu__item {
+  cursor: pointer;
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    background: @color-Primary-Dark;
+    color: @color-White;
+    border-radius: @border-radius;
+    padding: 10px 15px;
+    min-width: 50px;
+    margin: 0 0 10px 0;
+  }
+  .-caret {
+    user-select: none;
+    &.-active:before {
+      content: "\25B6";
+      transform: rotate(90deg);
+      transition: transform .2s ease;
+    }
+    &:before {
+      content: "\25B6";
+      color: @color-White;
+      display: inline-block;
+      margin-right: 6px;
+      font-size: 10px;
+      transition: transform .2s ease;
+    }
+  }
+}
+
+.menu__settings {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.menu__settings--item {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+  letter-spacing: .5px;
+  &.-active {
+    border-bottom: 2px solid @color-Blue;
+    font-weight: 500;
+  }
+}
